@@ -11,7 +11,7 @@ import android.util.Log;
 
 public class AlarmService extends IntentService {
     private NotificationManager mNotificationManager;
-    private String mNotificationMessage = "Wake up!";
+    private String mNotificationMessage = "Wake Up!";
 
     public AlarmService() {
         super("AlarmService");
@@ -27,9 +27,9 @@ public class AlarmService extends IntentService {
 
         String message = "Wake up!";
         NotificationCompat.Builder alarmNotificationBuilder = new NotificationCompat.Builder(
-                this).setContentTitle("Alarm").setSmallIcon(R.drawable.ic_alarm)
+                this).setContentTitle("Stay Woke").setSmallIcon(R.drawable.ic_alarm)
                 .setStyle(new NotificationCompat.BigTextStyle().bigText(mNotificationMessage))
-                .setContentText(mNotificationMessage);
+                .setContentText(mNotificationMessage).setFullScreenIntent(contentIntent, true);
 
 
         alarmNotificationBuilder.setContentIntent(contentIntent);
