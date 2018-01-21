@@ -7,7 +7,7 @@
     tools:context="com.clawrence8.staywoke.AlarmActivity">
 
     <TimePicker
-        android:id="@+id/timePicker2"
+        android:id="@+id/alarmTimePicker"
         android:layout_width="372dp"
         android:layout_height="346dp"
         android:layout_marginEnd="8dp"
@@ -16,4 +16,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/alarmToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ToggleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alarmTimePicker" />
 </android.support.constraint.ConstraintLayout>

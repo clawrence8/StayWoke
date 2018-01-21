@@ -21,7 +21,13 @@
         <activity
             android:name="com.spotify.sdk.android.authentication.LoginActivity"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <receiver android:name=".AlarmReceiver" android:exported="true" />
+
+        <service
+            android:name=".AlarmService"
+            android:exported="false"
+            android:enabled="true"></service>
     </application>
 
 </manifest>
